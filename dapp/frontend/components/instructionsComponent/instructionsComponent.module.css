@@ -74,21 +74,34 @@ gap: 12px;
 width: 392px;
 height: 80px;
 
-background: rgba(0, 0, 0, 0.9);
+background: inherit;
 /* Grayscale/Metal */
 box-shadow: 2px 2px 3px rgb(142, 142, 142);
 border-radius: 12px;
 cursor: pointer;
 transition: all .5s;
+
+background-color: initial; /* Set the default background color */
+  color: black; /* Set the text color for better visibility */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+ 
 }
 
 .button:hover{
-    background: rgba(0, 0, 0, 0.88);
+    background: white;
     box-shadow: 6px 6px 6px rgb(234, 234, 234);
     transform: translateY(-3px);
 
 }
 
+.button:active,
+.button:focus {
+  background-color: white;
+  color: white;
+}
 .button p {
 font-style: normal;
 font-size: 18px;
