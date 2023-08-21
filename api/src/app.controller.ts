@@ -2,6 +2,8 @@
 import { Body, Controller, Get, Param, Post } from '@nestjs/common';
 import { AppService } from './app.service';
 import { MintTokenDto } from './dtos/mintToken.dto';
+import { DelegateVotesDto } from './dtos/selfDelegate.dto';
+ 
 
 @Controller()
 export class AppController {
@@ -36,24 +38,23 @@ export class AppController {
 
   }
 
+  
+
   @Post('mint-tokens')
-  async mintTokens(@Body() body: MintTokenDto) {
-    console.log( body );
+  async mintTokens(@Body() body: MintTokenDto): Promise<any> {
+    console.log({ body });
     return await this.appService.mintTokens(body.address);
-
   }
-
+ 
 
   @Post('self-delegate')
-  async selfDelegate(@Body() body: MintTokenDto) {
-    console.log( body );
+  async selfDelegate(@Body() body: DelegateVotesDto): Promise<any> {
+    console.log({ body });
     return await this.appService.selfDelegate(body.address);
-
   }
 
   @Post('create-proposal') //
-createProposal(@Body() body: { proposal: string }) {
-  console.log( body);
+createProposal(@Body() body: { proposal: string }) { 
   try {
     this.appService.createNewProposal(body.proposal);
     return { success: true };
