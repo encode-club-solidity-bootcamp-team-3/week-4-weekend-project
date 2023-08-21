@@ -56,13 +56,13 @@ export class AppService {
 
   }
 
-  async selfDelegate(address: string): Promise <any>{
-    console.log("Self delegating to " + address)
-    const tx = await this.contract.delegate(address);
-    const receipt = await tx.wait(); 
-    //return {result: true};
-    return {success: true, txHash: '...'};
 
+  async selfDelegate(address: string): Promise<any> {
+    console.log("Self-delegating");
+    const tx = await this.contract.delegate(address);
+    const receipt = await tx.wait();
+    console.log(receipt);
+    return { success: true, txHash: tx.hash };
   }
 
   getHello(): string {
