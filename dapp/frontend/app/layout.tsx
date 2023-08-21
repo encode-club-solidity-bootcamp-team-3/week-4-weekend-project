@@ -10,7 +10,7 @@ const config = createConfig(
     // Required API Keys
     alchemyId: process.env.ALCHEMY_API_KEY, // or infuraId
     walletConnectProjectId: process.env.NEXT_PUBLIC_WALLET_CONNECT_PROJECT_ID!,
-
+    chains: [sepolia],
     // Required
     appName: "You Create Web3 Dapp",
 
