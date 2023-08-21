@@ -2,8 +2,8 @@ import styles from "./instructionsComponent.module.css";
 import { useAccount, useNetwork, useBalance, useSignMessage, useContractRead } from "wagmi"; 
 import { useEffect, useState } from "react";
 
-import tokenJson from '../../../../project-name/src/assets/MyToken.json';
-import ballotJson from '../../../../project-name/src/assets/TokenizedBallot.json';
+import tokenJson from '../../../../api/src/assets/MyToken.json';
+import ballotJson from '../../../../api/src/assets/TokenizedBallot.json';
 
 
 export default function InstructionsComponent() {
