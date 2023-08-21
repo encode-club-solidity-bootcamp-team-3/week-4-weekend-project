@@ -39,3 +39,21 @@ This is a group activity for at least 3 students:
   * Request voting tokens from API
 * Use these tokens to interact with the tokenized ballot
 * All other interactions must be made directly on-chain
+
+### Steps:
+
+1. Modified the Layouts so that the frontend connects to Sepolia, where we have our contracts deployed.
+2. Modified the API so that it connects to the minting tokens and tokenized ballot.
+3. After checking that the swagger API works as expected, modified frontend so that it has three buttons:
+    a) Mint (request) tokens
+    b) Delegates votes
+    c) Votes
+4. So far, the two first buttons work as expected:
+> Tx through the Frontend to Mint which queries the API:  https://sepolia.etherscan.io/tx/0xd3b1ab1890b63fc7a395d3a4268b6e64bc80064cc394f4954bbdde593e618805
+> Tx through the Frontend to Self-Delegate which queries the API:
+https://sepolia.etherscan.io/tx/0x3b64564e2c0735e7ccbd3f3112cfd376354afa6eab3e2356e199b862ae25a6e5
+5. The frontend also queries balance, token and token Balance:
+<img width="936" alt="Captura de pantalla 2023-08-21 a las 2 33 33" src="https://github.com/encode-club-solidity-bootcamp-team-3/week-4-weekend-project/assets/34830607/a27bce7b-c058-4367-90a5-24b91caeee1c">
+
+
+   
