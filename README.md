@@ -55,5 +55,32 @@ https://sepolia.etherscan.io/tx/0x3b64564e2c0735e7ccbd3f3112cfd376354afa6eab3e23
 5. The frontend also queries balance, token and token Balance:
 <img width="936" alt="Captura de pantalla 2023-08-21 a las 2 33 33" src="https://github.com/encode-club-solidity-bootcamp-team-3/week-4-weekend-project/assets/34830607/a27bce7b-c058-4367-90a5-24b91caeee1c">
 
+### Explanation
 
+API
+
+- Added selfDelegate DTO for self delegation following a similar structure as for mintTokens DTO.
+  
+- App Service:
+
+Saved tokenized ballot json file inside assets folder and imported.
+Created two contracts const, one for the token and one for tokenized ballot.
+Created self delegate and mint functionallity which will be used as post.
+
+- App Controller: 
+
+Imported DTO
+Created Mint Token post
+Created Self Delegate post
+Created Proposals post (although at this moment it is not working as expected).
+
+DAPP
+
+Modified a few things in the css file for the frontend.
+
+Created mintToken button, delegate vote and vote button, calling API.
+
+Changed layout to connect to Sepolis.
+
+They are supposed to return tx hash and, although they do trigger the transaction and it goes through, only for self delegation shows the transaction hash.
    
