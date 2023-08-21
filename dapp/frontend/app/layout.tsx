@@ -22,9 +22,9 @@ const config = createConfig(
     // ChainDoesNotSupportContract: Chain "Sepolia" does not support contract "ensUniversalResolver".
     // This could be due to any of the following:
     // - The chain does not have the contract "ensUniversalResolver" configured.
-    // chains: [sepolia],
-    chains: [goerli],
-    autoConnect: false
+    chains: [sepolia],
+    // chains: [goerli],
+    // autoConnect: false
   })
 );
 

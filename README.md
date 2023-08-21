@@ -83,4 +83,15 @@ Created mintToken button, delegate vote and vote button, calling API.
 Changed layout to connect to Sepolis.
 
 They are supposed to return tx hash and, although they do trigger the transaction and it goes through, only for self delegation shows the transaction hash.
-   
+
+--------
+
+# Second page /weekend-project
+
+The goal of this page is to allow multiple users to connect to the dapp and vote using their own wallet.
+
+The token and ballot contracts have been deployed and tokens have been minted, transfered and delegated using scripts.
+
+Started to work on a self delegate feature from the dapp but it is useless because the ballot contract only works if the tokens have been delegated before the ballot contract has been deployed.
+
+![Alt text](image.png)
